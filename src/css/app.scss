@@ -1,0 +1,63 @@
+body.body--dark {
+  background: #291061;
+}
+body.body--light {
+  background: #291061;
+  caret-color: #291061;
+}
+router-link {
+  text-decoration: none;
+}
+.link {
+  color: wheat;
+  text-decoration: none;
+}
+.full_width {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.centered {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  background-color: #291061;
+  height: 100vh;
+  caret-color: #291061;
+}
+.trnz {
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+
+.trnz:hover {
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.anim_1 {
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-name: my_anim_1;
+}
+
+@keyframes my_anim_1 {
+  from {
+    opacity: 0;
+    width: 300%;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}

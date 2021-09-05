@@ -1,0 +1,51 @@
+<h1>admin page</h1>
+
+<script>
+  //     import zayavka from "src/components/ui/Zayavka.vue";
+  //     import poisk_tzeh from "src/components/ui/poisk_tzeh";
+  //     import { onBeforeMount, ref, computed } from "vue";
+  //     import { useStore } from "vuex";
+  //   export default {
+  //     name: "PageIndex",
+  //     components: { zayavka, poisk_tzeh },
+  //     setup() {
+  //       var loading = ref(false);
+  //       const store = useStore();
+  //       const filter = ref({});
+
+  //       onBeforeMount(async () => {
+  //         loading.value = true;
+  //         await store.dispatch("requests/getallZayavka");
+  //         loading.value = false;
+  //       });
+  //       const zayavki = computed(() =>
+  //         store.getters["requests/getAllzayavki"]
+  //           .filter((zayavk) => {
+  //             if (filter.value.tzeh) {
+  //               return zayavk.tzeh.includes(filter.value.tzeh);
+  //             }
+  //             return zayavk;
+  //           })
+  //           .filter((zayavk) => {
+  //             if (filter.value.professia) {
+  //               return zayavk.professia.includes(filter.value.professia);
+  //             }
+  //             return zayavk;
+  //           })
+  //       );
+
+  //       return {
+  //         loading,
+  //         zayavki,
+  //         filter,
+  //       };
+  //     },
+  //   };
+</script>
+<style scoped>
+  .full_width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
