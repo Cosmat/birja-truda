@@ -19,7 +19,12 @@ app.get("/", function (req, res) {
 });
 
 mongoose
-  .connect(keys.MONGO_URI)
+  .connect(keys.MONGO_URI, { 
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
   .then(() => console.log("MongoDB sucsessfuly connected"))
   .catch((error) => console.error(error));
 module.exports = app;
